@@ -10,6 +10,9 @@
 		9143C3F5234BD48D00DDB971 /* MapsAndHashing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9143C3EB234BD48D00DDB971 /* MapsAndHashing.framework */; };
 		9143C3FA234BD48D00DDB971 /* MapsAndHashingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143C3F9234BD48D00DDB971 /* MapsAndHashingTests.swift */; };
 		9143C3FC234BD48E00DDB971 /* MapsAndHashing.h in Headers */ = {isa = PBXBuildFile; fileRef = 9143C3EE234BD48D00DDB971 /* MapsAndHashing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9143C406234BD4A500DDB971 /* Maps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143C405234BD4A500DDB971 /* Maps.swift */; };
+		9143C408234BF60300DDB971 /* HashTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143C407234BF60300DDB971 /* HashTable.swift */; };
+		9143C40A234BF92500DDB971 /* HashTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9143C409234BF92500DDB971 /* HashTableTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		9143C3F4234BD48D00DDB971 /* MapsAndHashingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsAndHashingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9143C3F9234BD48D00DDB971 /* MapsAndHashingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsAndHashingTests.swift; sourceTree = "<group>"; };
 		9143C3FB234BD48E00DDB971 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9143C405234BD4A500DDB971 /* Maps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Maps.swift; sourceTree = "<group>"; };
+		9143C407234BF60300DDB971 /* HashTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTable.swift; sourceTree = "<group>"; };
+		9143C409234BF92500DDB971 /* HashTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTableTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 			isa = PBXGroup;
 			children = (
 				9143C3EE234BD48D00DDB971 /* MapsAndHashing.h */,
+				9143C405234BD4A500DDB971 /* Maps.swift */,
+				9143C407234BF60300DDB971 /* HashTable.swift */,
 				9143C3EF234BD48D00DDB971 /* Info.plist */,
 			);
 			path = MapsAndHashing;
@@ -81,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				9143C3F9234BD48D00DDB971 /* MapsAndHashingTests.swift */,
+				9143C409234BF92500DDB971 /* HashTableTests.swift */,
 				9143C3FB234BD48E00DDB971 /* Info.plist */,
 			);
 			path = MapsAndHashingTests;
@@ -148,6 +157,7 @@
 				TargetAttributes = {
 					9143C3EA234BD48D00DDB971 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					9143C3F3234BD48D00DDB971 = {
 						CreatedOnToolsVersion = 11.0;
@@ -195,6 +205,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9143C408234BF60300DDB971 /* HashTable.swift in Sources */,
+				9143C406234BD4A500DDB971 /* Maps.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9143C40A234BF92500DDB971 /* HashTableTests.swift in Sources */,
 				9143C3FA234BD48D00DDB971 /* MapsAndHashingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +353,7 @@
 		9143C400234BD48E00DDB971 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SFWANW347N;
@@ -356,6 +370,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ronak.MapsAndHashing;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +379,7 @@
 		9143C401234BD48E00DDB971 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = SFWANW347N;
@@ -388,6 +404,7 @@
 		9143C403234BD48E00DDB971 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFWANW347N;
 				INFOPLIST_FILE = MapsAndHashingTests/Info.plist;
@@ -406,6 +423,7 @@
 		9143C404234BD48E00DDB971 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SFWANW347N;
 				INFOPLIST_FILE = MapsAndHashingTests/Info.plist;
